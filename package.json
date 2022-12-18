@@ -12,11 +12,21 @@
   "dependencies": {
     "core-js": "^3.26.1",
     "fractional": "^1.0.0",
+    "fracty": "^1.0.11",
     "parcel": "^2.8.1",
     "regenerator-runtime": "^0.13.11",
     "sass": "^1.56.2"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.1"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElenaCherpakova/forkify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ElenaCherpakova/forkify/issues"
+  },
+  "homepage": "https://github.com/ElenaCherpakova/forkify#readme"
 }

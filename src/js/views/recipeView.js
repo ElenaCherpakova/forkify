@@ -1,19 +1,19 @@
 import View from './View.js';
+ 
 import icons from 'url:../../img/icons.svg';
-import fracty from 'fracty';
+import fracty from "fracty";
 
-class RecipeView extends View{
+class RecipeView extends View {
   _parentElement = document.querySelector('.recipe');
   _errorMessage = 'We could not find that recipe 🙁';
   _message = '';
-
-  
 
   addHandlerRender(handler) {
     ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
   }
 
   _generateMarkup() {
+    console.log(this._data);
     return `<figure class="recipe__fig">
     <img src="${this._data.image}" alt="${
       this._data.title
@@ -57,9 +57,6 @@ class RecipeView extends View{
     </div>
 
     <div class="recipe__user-generated">
-      <svg>
-        <use href="${icons}#icon-user"></use>
-      </svg>
     </div>
     <button class="btn--round">
       <svg class="">

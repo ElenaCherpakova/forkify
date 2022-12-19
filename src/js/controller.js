@@ -1,16 +1,16 @@
 import * as model from './model.js';
+if (module.hot) {
+  module.hot.accept();
+}
+
 import recipeView from './views/recipeView.js';
 import searchView from './views/searchView.js';
 import resultsView from './views/resultsView.js';
 
-//polyfilling for everythin else (support any most real-old browsers )
-import 'core-js/stable';
-//polyfilling async/await
-import 'regenerator-runtime/runtime';
-
 const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
+    // console.log(id);
     if (!id) return;
     //1) Load a recipe
     recipeView.renderSpinner();
@@ -20,21 +20,24 @@ const controlRecipes = async function () {
     //2) render recipe
     recipeView.render(model.state.recipe);
   } catch (err) {
-    // console.log(err);
     recipeView.renderError();
+    console.log(err);
   }
 };
 
 const controlSearchResults = async function () {
   try {
     resultsView.renderSpinner();
-    console.log(resultsView)
+
     const query = searchView.getQuery();
+    // console.log(query);
     if (!query) return;
 
     await model.loadSearchResults(query);
 
-    console.log(model.state.search.results);
+    console.log(model.getSearchResultsPage(1));
+    // resultsView.render(model.state.search.results);
+    resultsView.render(model.getSearchResultsPage());
   } catch (err) {
     console.log(err);
   }

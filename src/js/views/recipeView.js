@@ -7,7 +7,6 @@ class RecipeView extends View {
   _errorMessage = 'We could not find that recipe. Please try another one!';
   _message = '';
 
-  
   addHandlerRender(handler) {
     ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
   }
@@ -56,11 +55,7 @@ class RecipeView extends View {
         </div>
       </div>
 
-      <div class="recipe__user-generated">
-        <svg>
-          <use href="${icons}#icon-user"></use>
-        </svg>
-      </div>
+      <div class="recipe__user-generated"></div>
       <button class="btn--round">
         <svg class="">
           <use href="${icons}#icon-bookmark-fill"></use>

@@ -1,7 +1,7 @@
 {
   "name": "forkify",
   "version": "1.0.0",
-  "description": "Recipe app",
+  "description": "Recipe App",
   "default": "index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "targets": {
@@ -11,13 +11,19 @@
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
   },
-  "author": "Elena",
-  "license": "ISC",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.2.1",
-    "parcel": "^2.2.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElenaCherpakova/forkify.git"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "fracty": "^1.0.9"
+    "@parcel/transformer-sass": "^2.8.2",
+    "core-js": "^3.26.1",
+    "fracty": "^1.0.11",
+    "regenerator-runtime": "^0.13.11"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.2"
   }
 }

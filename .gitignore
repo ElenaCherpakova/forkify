@@ -1,0 +1,11 @@
+dist
+
+node_modules
+
+.parcel-cache
+
+.env
+.env.example
+.env.local
+.env.staging
+

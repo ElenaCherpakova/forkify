@@ -1,5 +1,5 @@
-import { TIMEOUT_SEC } from './config.js';
 import { async } from 'regenerator-runtime';
+import { TIMEOUT_SEC } from './config.js';
 
 const timeout = function (s) {
   return new Promise(function (_, reject) {
@@ -11,8 +11,7 @@ const timeout = function (s) {
 
 export const getJSON = async function (url) {
   try {
-    const res = await Promise.race([(fetch(url), timeout(TIMEOUT_SEC))]);
-
+    const res = await Promise.race([fetch(url), timeout(TIMEOUT_SEC)]);
     const data = await res.json();
 
     if (!res.ok) throw new Error(`${data.message} ${res.status}`);

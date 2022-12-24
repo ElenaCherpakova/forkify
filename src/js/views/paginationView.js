@@ -9,7 +9,6 @@ class PaginationView extends View {
       const btn = e.target.closest('.btn--inline');
       if (!btn) return;
       const goToPage = +btn.dataset.goto;
-      console.log(goToPage);
       handler(goToPage);
     });
   }
@@ -40,9 +39,7 @@ class PaginationView extends View {
   _generateMarkupButton(numPage) {
     const currentPage = this._data.page;
     return `
-    <button data-goto="${
-      numPage > 0 ? currentPage + 1 : currentPage - 1
-    }"
+    <button data-goto="${numPage > 0 ? currentPage + 1 : currentPage - 1}"
     class="btn--inline pagination__btn--${numPage > 0 ? 'next' : 'prev'}">
       <span>Page ${numPage + currentPage}</span>
       <svg class="search__icon">

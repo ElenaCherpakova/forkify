@@ -46,7 +46,10 @@ export const loadSearchResults = async function (query) {
         publisher: rec.publisher,
         image: rec.image_url,
       };
+      
     });
+    // if we send another search query then we need to reset the page to 1
+    state.search.page = 1;
     // console.log(state.search.results)
   } catch (err) {
     console.log(`${err}!!!!`);

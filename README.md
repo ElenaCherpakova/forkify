@@ -18,7 +18,8 @@ Forkify is a vanilla JavaScript application that interacts with the Forkify API 
 - Generate an API key from [Forkify API](https://forkify-api.herokuapp.com/) and add it to the `config.js` file
 - Run `npm install` to install dependencies
 - Run `npm run start` to start the development server
-- Run `npm run build` to build the production bundle
+- Run `npm run build` to build the project for production
+
 
 ## License and Credits
 - This project is licensed under the MIT License

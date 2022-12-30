@@ -22,6 +22,16 @@ Forkify is a vanilla JavaScript application that interacts with the Forkify API 
 
 *For details, please refer to the [documentation](https://forkify-api.herokuapp.com/).*
 
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+- Parcel
+- Axios
+- ES6 Modules
+- Fracty (for formatting numbers)
+ 
 ## License and Credits
 - This project is licensed under the MIT License
 

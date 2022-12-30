@@ -20,7 +20,7 @@ Forkify is a vanilla JavaScript application that interacts with the Forkify API 
 - Run `npm run start` to start the development server
 - Run `npm run build` to build the project for production
 
-*For more details, please refer to the [documentation](https://forkify-api.herokuapp.com/).*
+*For details, please refer to the [documentation](https://forkify-api.herokuapp.com/).*
 
 ## License and Credits
 - This project is licensed under the MIT License

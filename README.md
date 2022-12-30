@@ -16,7 +16,7 @@ Forkify is a vanilla JavaScript application that interacts with the Forkify API 
 ## Installation
 - Clone the repository
 - Generate an API key from [Forkify API](https://forkify-api.herokuapp.com/) and add it to the `config.js` file
-- Run `npm install` to install dependencies
+- ```Run `npm install` to install dependencies```
 - Run `npm run start` to start the development server
 - Run `npm run build` to build the project for production
 

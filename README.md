@@ -21,7 +21,9 @@ Bookmarked recipes are stored in local storage so no database was required for t
 
 Start with the latest version of NPM to avoid any errors:
 
-``` npm install npm@latest -g ```
+``` 
+npm install npm@latest -g 
+```
 
 ## Installation
 
@@ -29,7 +31,9 @@ Start with the latest version of NPM to avoid any errors:
 2. Run `npm install` to install dependencies
 3. Generate an API key from [Forkify API](https://forkify-api.herokuapp.com/) and enter it in `config.js`
 
-``const KEY = 'ENTER YOUR API'``
+```
+const KEY = 'ENTER YOUR API'
+```
 
 4. Run `npm run start` to start the development server
 

@@ -27,7 +27,7 @@ Start with the latest version of NPM to avoid any errors:
 
 1. Clone the repository
 2. Run `npm install` to install dependencies
-3 Generate an API key from [Forkify API](https://forkify-api.herokuapp.com/) and enter it in `config.js`
+3. Generate an API key from [Forkify API](https://forkify-api.herokuapp.com/) and enter it in `config.js`
 
 ``const KEY = 'ENTER YOUR API'``
 

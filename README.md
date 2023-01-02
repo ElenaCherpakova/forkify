@@ -2,10 +2,14 @@
 ## Description
 Forkify is a vanilla JavaScript application that interacts with the Forkify API to fetch and display recipe food data.
 
-## User Features
-- Search for recipes by keyword
-- View recipe details
-- Add recipe to favorites
+
+## Usage
+
+The Forkify Recipe App allows users to search for recipes.
+
+Users can view the recipe along with the cook time and also increase or decrease the amount of servings they need.
+
+Bookmarked recipes are stored in local storage so no database was required for this application.
 
 ## Developer Features
 - Uses MVC architecture
@@ -13,12 +17,17 @@ Forkify is a vanilla JavaScript application that interacts with the Forkify API 
 - Uses Axios for HTTP requests
 - Uses ES6 modules
 
+## Prerequisites
+Start with the latest version of NPM to avoid any errors:
+``` npm install npm@latest -g ```
+
 ## Installation
-- Clone the repository
-- Generate an API key from [Forkify API](https://forkify-api.herokuapp.com/) and add it to the `config.js` file
-- Run `npm install` to install dependencies
-- Run `npm run start` to start the development server
-- Run `npm run build` to build the project for production
+
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3 Generate an API key from [Forkify API](https://forkify-api.herokuapp.com/) and enter it in `config.js` file
+``const KEY = 'ENTER YOUR API'``
+4. Run `npm run start` to start the development server
 
 *For details, please refer to the [documentation](https://forkify-api.herokuapp.com/).*
 

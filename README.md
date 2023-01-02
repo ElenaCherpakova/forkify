@@ -28,6 +28,10 @@ npm install npm@latest -g
 ## Installation
 
 1. Clone the repository
+```
+git clone git@github.com:ElenaCherpakova/forkify.git
+```
+
 2. Run `npm install` to install dependencies
 3. Generate an API key from [Forkify API](https://forkify-api.herokuapp.com/) and enter it in `config.js`
 
